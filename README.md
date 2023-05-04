@@ -8,7 +8,7 @@
 
 ## Other projects
 
-📚 [All Project Tutorials](https://github.com/muzahidulsaki)
+📚 [Project](https://github.com/muzahidulsaki)
   
 
 
