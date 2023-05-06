@@ -563,7 +563,7 @@ p {
 @keyframes text_reveal {
 	100% {
 		color: rgb(239, 239, 239);
-		font-size: 5.5rem;
+		font-size: 4.5rem;
 	}
 }
 @keyframes text_reveal_name {
@@ -571,13 +571,11 @@ p {
 		color: rgb(255, 4, 4);
 		font-weight: 500;
 		font-size: 6rem;
-		text-transform: uppercase;
 	}
 }
 @keyframes text_reveal_name1 {
 	100% {
 		color: rgb(243, 11, 11);
-		font-weight: 500;
 		font-size: 4rem;
 	}
 }
