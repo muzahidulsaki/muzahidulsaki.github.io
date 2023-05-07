@@ -11,6 +11,9 @@ html {
 }
 a {
 	text-decoration: none;
+	color: rgb(245, 245, 245);
+	font-weight: 400;
+
 }
 .container {
 	min-height: 100vh;
@@ -716,4 +719,3 @@ p {
 		margin: 1.5%;
 	}
 }
-/* End  Media Query For Desktop */
