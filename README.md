@@ -1,7 +1,6 @@
 
 ---
-
-### Made with  by   [Muzahidul Saki](https://muzahidulsaki.me/)
+  [Muzahidul Saki](https://muzahidulsaki.me/)
 
 
 ---
