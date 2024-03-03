@@ -27,6 +27,7 @@ img {
 	width: 100%;
 	object-fit: cover;
 }
+
 p {
 	color: black;
 	font-size: 1.4rem;
@@ -203,7 +204,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/hero-bg.png);
+	background-image: url(./img/bg4.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -287,7 +288,7 @@ p {
 	margin: 0 auto;
 }
 #services .service-bottom {
-	display: flex;
+	display:flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -456,6 +457,129 @@ p {
 	z-index: -1;
 }
 /* End About Section */
+
+/* Education Section */
+#education .education{
+	flex-direction: column-reverse;
+	
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+
+#education .aaa h1{
+	font-size: 2.4rem;
+	font-weight: 1200;
+	letter-spacing: 0.1rem;
+	margin-bottom: 10px;
+	
+}
+
+#education .aaa h2{
+	font-size: 1.6rem;
+	font-weight: 580;
+	letter-spacing: 0.1rem;
+	margin-bottom: 0px;
+	
+}
+#education .aaa h3{
+	color: red;
+	font-size: 1.3rem;
+	font-weight: 900;
+	letter-spacing: 0.1rem;
+	margin-bottom: 10px;
+	
+}
+#education .aaa h4{
+	font-size: 1.2rem;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	margin-bottom: 10px;
+	margin-top: 0%;
+	margin-left: 0px;
+	
+}
+
+#education .bbb h1{
+	font-size: 2.4rem;
+	font-weight: 1200;
+	letter-spacing: 0.1rem;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	
+}
+
+#education .bbb h2{
+	font-size: 1.6rem;
+	font-weight: 580;
+	letter-spacing: 0.1rem;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	
+}
+#education .bbb h3{
+	color: red;
+	font-size: 1.3rem;
+	font-weight: 900;
+	letter-spacing: 0.1rem;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	
+}
+#education .bbb h4{
+	font-size: 1.2rem;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	margin-bottom: 10px;
+	margin-top: 0%;
+	margin-left: 10px;
+	
+}
+
+#education .ccc h1{
+	font-size: 2.4rem;
+	font-weight: 1200;
+	letter-spacing: 0.1rem;
+	margin-bottom: 5px;
+	margin-left: -85px;
+	
+}
+
+#education .ccc h2{
+	font-size: 1.6rem;
+	font-weight: 580;
+	letter-spacing: 0.1rem;
+	margin-bottom: 0px;
+	margin-left: -85px;
+	
+}
+#education .ccc h3{
+	color: red;
+	font-size: 1.3rem;
+	font-weight: 900;
+	letter-spacing: 0.1rem;
+	margin-bottom: 10px;
+	margin-left: -85px;
+	
+}
+#education .ccc h4{
+	font-size: 1.2rem;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	margin-bottom: 10px;
+	margin-top: 0%;
+	margin-left: -85px;
+	
+}
+#education .row h1{
+	font-size: 6rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 100px;
+	margin-left: 20;
+	margin-right: 100;
+}
+/* End Education Section */
 
 /* contact Section */
 #contact .contact {
@@ -719,3 +843,4 @@ p {
 		margin: 1.5%;
 	}
 }
+/* End  Media Query For Desktop */
