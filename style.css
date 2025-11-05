@@ -733,9 +733,10 @@ span {
 
 /* Skills styles removed — skills will be managed with static HTML per user request */
 .section.skills {
-  background: #f8f9fa;
+  /* Use theme-aware variables so dark mode applies correctly */
+  background: var(--color-surface);
   padding: 60px 0;
-  color: #222;
+  color: var(--color-text);
   font-family: "Inter", sans-serif;
 }
 
@@ -748,7 +749,7 @@ span {
 
 .section-subtitle {
   text-align: center;
-  color: #666;
+  color: var(--color-text-secondary);
   margin-bottom: 40px;
 }
 
@@ -765,7 +766,8 @@ span {
 
 .skill-category h3 {
   font-size: 0.8rem;
-  color: #3c2ff1;
+  /* primary accent should follow theme color */
+  color: var(--color-primary);
   margin-bottom: 15px;
   display: flex;
   align-items: center;
@@ -779,13 +781,13 @@ span {
 }
 
 .skills-list span {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--color-background);
+  border: 1px solid var(--color-card-border);
   padding: 7px 12px;
   border-radius: 8px;
   font-size: 0.75rem;
   font-weight: 500;
-  color: #333;
+  color: var(--color-text);
   display: inline-flex;
   align-items: center;
   transition: all 0.2s ease;
