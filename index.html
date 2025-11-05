@@ -2,376 +2,913 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Muzahidul Saki</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muzahidul Islam Saki - Software Engineer Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loader"></div>
+  </div>
+
   <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1><span>M</span>uzahidul <span>S</span>aki</h1>
-          </a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="#hero" class="logo">
+        <img src="./img/signatutre.png" alt="Logo" class="logo-img" />
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Muzahidul Islam Saki</h1>
+      <div class="typing-text" id="typingText">
+        <span id="typedText"></span><span class="cursor"></span>
+      </div>
+      <div class="hero-subtitle" style="margin-bottom: 15px;">
+        Aspiring Software Engineer
+      </div>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-briefcase"></i>
+          View My Work
+        </a>
+        <a href="https://drive.google.com/file/d/1c3vc2r_p8FmYTYjGs1RAZUlBMZmsqzQD/view?usp=sharing" target="_blank"
+          class="btn btn-secondary">
+          <i class="fas fa-download"></i>
+          Download Resume
+        </a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/muzahidulsaki" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/muzahidulsaki/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:muzahidulislamsaki@gmail.com" target="_blank" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <!-- <a href="https://www.facebook.com/muzahidulsaki/" target="_blank" class="social-link">
+          <i class="fab fa-facebook-f"></i>
+        </a> -->
+        <!-- <a href="https://www.instagram.com/muzahidulsaki" target="_blank" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/SakiMuzahidul" target="_blank" class="social-link">
+          <i class="fab fa-twitter"></i> 
+        </a>-->
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-subtitle">
+        My expertise in various programming languages and technologies
+      </p>
+
+      <div class="skills-wrapper">
+        <!-- Left Column -->
+        <div class="skills-column">
+
+          <!-- Languages -->
+          <div class="skill-category">
+            <h3><i class="fas fa-code fa-sm"></i> Languages:</h3>
+            <div class="skills-list">
+              <span><i></i> C</span>
+              <span><i></i> C++</span>
+              <span><i class="fab fa-python fa-sm"></i> Python</span>
+              <span><i class="fab fa-js-square fa-sm"></i> JavaScript</span>
+              <span><i class="fab fa-js fa-sm"></i> TypeScript</span>
+            </div>
           </div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Skills">Skills</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#education" data-after="Education">Education</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
+
+          <!-- Frontend -->
+          <div class="skill-category">
+            <h3><i class="fas fa-laptop-code fa-sm"></i> Frontend:</h3>
+            <div class="skills-list">
+              <span><i class="fab fa-react fa-sm"></i> React</span>
+              <span><i class="fab fa-react fa-sm"></i> Next.js</span>
+              <span><i class="fas fa-paint-brush fa-sm"></i> Tailwind CSS</span>
+              <span><i class="fab fa-html5 fa-sm"></i> HTML</span>
+              <span><i class="fab fa-css3-alt fa-sm"></i> CSS</span>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-category">
+            <h3><i class="fas fa-server fa-sm"></i> Backend:</h3>
+            <div class="skills-list">
+              <span><i class="fab fa-node-js fa-sm"></i> Node.js</span>
+              <span><i class="fab fa-node-js fa-sm"></i> Nest.js</span>
+              <span><i class="fas fa-plug fa-sm"></i> REST API</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category">
+            <h3><i class="fas fa-database fa-sm"></i> Databases:</h3>
+            <div class="skills-list">
+              <span><i class="fas fa-database fa-sm"></i> PostgreSQL</span>
+              <span><i class="fas fa-database fa-sm"></i> MySQL</span>
+              <!-- <span><i class="fas fa-memory fa-sm"></i> Redis</span>
+            <span><i class="fas fa-fire fa-sm"></i> Firebase</span>
+            <span><i class="fas fa-vector-square fa-sm"></i> Pinecone</span> -->
+            </div>
+          </div>
+
+          <!-- AI/ML -->
+          <div class="skill-category">
+            <h3><i class="fas fa-brain fa-sm"></i> AI / ML:</h3>
+            <div class="skills-list">
+              <!-- <span><i class="fas fa-link fa-sm"></i> LangChain</span>
+            <span><i class="fas fa-random fa-sm"></i> RAG Pipelines</span>
+            <span><i class="fas fa-database fa-sm"></i> Vector Databases</span>
+            <span><i class="fas fa-project-diagram fa-sm"></i> Vector Embeddings</span>
+            <span><i class="fas fa-robot fa-sm"></i> AI Agents</span> -->
+              <span><i class="fas fa-lightbulb fa-sm"></i> Prompt Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="skills-column">
+          <!-- DevOps/Cloud -->
+          <div class="skill-category">
+            <!-- <h3><i class="fas fa-cloud fa-sm"></i> DevOps / Cloud:</h3>
+          <div class="skills-list">
+            <span><i class="fab fa-docker fa-sm"></i> Docker</span>
+            <span><i class="fas fa-network-wired fa-sm"></i> Kubernetes</span>
+            <span><i class="fab fa-github fa-sm"></i> GitHub Actions</span>
+            <span><i class="fas fa-code-branch fa-sm"></i> CI/CD Pipelines</span>
+            <span><i class="fas fa-chart-line fa-sm"></i> Datadog</span>
+            <span><i class="fas fa-project-diagram fa-sm"></i> ArgoCD</span>
+            <span><i class="fas fa-wind fa-sm"></i> Apache Airflow</span>
+            <span><i class="fab fa-aws fa-sm"></i> AWS (ECS, EKS, EC2, RDS, S3, MWAA)</span>
+          </div> -->
+          </div>
+
+          <!-- Blockchain -->
+          <div class="skill-category">
+            <!-- <h3><i class="fas fa-link fa-sm"></i> Blockchain / Smart Contracts:</h3>
+          <div class="skills-list">
+            <span><i class="fab fa-ethereum fa-sm"></i> Solidity</span>
+            <span><i class="fas fa-code fa-sm"></i> Web3.py</span>
+            <span><i class="fas fa-code fa-sm"></i> Web3.js</span>
+            <span><i class="fas fa-tools fa-sm"></i> Remix</span>
+            <span><i class="fas fa-hammer fa-sm"></i> Hardhat</span>
+            <span><i class="fas fa-link fa-sm"></i> Ethers</span>
+            <span><i class="fas fa-flask fa-sm"></i> Alchemy</span>
+          </div> -->
+          </div>
+
+          <!-- Data Science -->
+          <div class="skill-category">
+            <h3><i class="fas fa-chart-bar fa-sm"></i> Data Science:</h3>
+            <div class="skills-list">
+              <span><i class="fas fa-table fa-sm"></i> Pandas</span>
+              <!-- <span><i class="fas fa-superscript fa-sm"></i> Numpy</span>
+            <span><i class="fas fa-chart-line fa-sm"></i> Matplotlib</span> -->
+              <span><i class="fas fa-book fa-sm"></i> Google Colab</span>
+              <span><i class="fas fa-database fa-sm"></i> SQL</span>
+            </div>
+          </div>
+
+          <!-- QA -->
+          <div class="skill-category">
+            <h3><i class="fas fa-vial fa-sm"></i> QA / Testing:</h3>
+            <div class="skills-list">
+              <!-- <span><i class="fas fa-vial fa-sm"></i> Pytest</span>
+            <span><i class="fas fa-check-circle fa-sm"></i> Jest</span>
+            <span><i class="fas fa-mug-hot fa-sm"></i> Mocha</span> -->
+              <span><i class="fas fa-weight-hanging fa-sm"></i> Load Testing</span>
+              <!-- <span><i class="fas fa-bolt fa-sm"></i> K6</span> -->
+              <span><i class="fas fa-list-check fa-sm"></i> Unit Testing</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Header -->
-
-
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>Muzahidul Islam Saki <span></span></h1>
-        <h1>Software Engineer <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section  -->
-
-  <!-- Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title"><span>S</span>kills</h1>
-
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>C++</h2>
-          <p>C++ is a popular programming language used for building high-performance software applications.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>C#</h2>
-          <p>C# (pronounced C sharp) is a popular programming language developed by Microsoft.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>javascript</h2>
-          <p>JavaScript is a powerful programming language used for creating dynamic
-            websites.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Java</h2>
-          <p>Java is a versatile and popular programming language used for building a wide range of software
-            applications.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>My SQL</h2>
-          <p> MySQL it is a popular open-source relational database management system (RDBMS). </p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>HTML</h2>
-          <p> HTML (Hypertext Markup Language) is the standard markup language used to create and design web pages.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>CSS</h2>
-          <p> CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document
-            written in HTML.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Service Section -->
 
   <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">
+        A showcase of my latest work and personal projects
+      </p>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="desktop">Desktop</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+        <button class="filter-btn" data-filter="problem-solving">
+          Problem Solving
+        </button>
+        <button class="filter-btn" data-filter="console">Console</button>
       </div>
-      <div class="all-projects">
-
-
-        <div class="project-item">
-            <div class="project-info">
-              <h1><a href="https://github.com/muzahidulsaki/Rental_Management_system" target="_blank">Simplify Rentals, Amplify Living.</a></h1>
-              <h2>Rental Management system</h2>
-              <p>
-                The Rental Management System streamlines rentals for homes, vehicles, equipment, and more.
-                Admins manage users and inventory, owners oversee rentals, and renters browse, request, 
-                and track rentals. Built with <b> HTML, CSS, JavaScript, PHP, and MySQL</b>, it ensures efficiency
-                and scalability. Developed with contributions from <b> Muzahidul Islam Saki</b> for a 
-                seamless rental experience.
-            </div>
-            <div class="project-img">
-              <img src="./img/dashboard1.jpg" alt="img">
-            </div>
-          </div>
-
-
-        <div class="project-item">
-            <div class="project-info">
-              <h1><a href="https://github.com/muzahidulsaki/Amar_Cash" target="_blank">Amar Cash</a></h1>
-              <h2>Digital payment platform</h2>
-              <p>
-                Amar Cash is a secure digital payment platform ensuring seamless transactions for admins,
-                agents, and users. Admins manage users and profits, agents handle cash-in/out and earnings,
-                while users send money, withdraw, and make payments. Built with C# and Microsoft SQL Server,
-                it offers a robust and scalable financial experience.</p>
-            </div>
-            <div class="project-img">
-              <img src="./img/amar_cash.png" alt="img">
-            </div>
-          </div>
-
-
-
-
-        <div class="project-item">
-          <div class="project-info">
-            <h1><a href="https://github.com/muzahidulsaki/E-Pharamcy" target="_blank">e-pharmacy</a></h1>
-            <h2>Online Pharmacy</h2>
-            <p>
-              E-Pharmacy is an online pharmacy project developed in Java Gui.
-              It provides a platform for customers to purchase medicines and
-              other health-related products from the comfort of their own home.
-              The project includes features such as a product catalog, shopping cart,
-              order management, and payment processing.E-Pharmacy aims to simplify the
-              process of buying medicines and healthcare products, making it accessible
-              and hassle-free for everyone.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1100.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1><a href="https://github.com/muzahidulsaki/Project-medicine" target="_blank">Project-medicine</a></h1>
-            <h2>Buy Medicines</h2>
-            <p>Project Medicine is a simple console-based project developed in C++. The
-              objective of this project is to provide a platform for users to purchase
-              medicines online. The system allows users to browse through a list of available
-              medicines, select the ones they need, and make payment for the same.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-111.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1><a href="https://github.com/muzahidulsaki/Cricket-Club-Management-System" target="_blank"
-                title="Codeforces">Cricket Club Management System</a></h1>
-            <h2><a href="https://github.com/muzahidulsaki/Cricket-Club-Management-System" target="_blank"
-                style="text-decoration: underline; color:rgb(255, 11, 11)"> My SQL Project</a></h2>
-            <p>The Cricket Club Management System developed in Oracle 10g is a comprehensive database project tailored
-              to streamline the operations of a cricket club. This system is designed to efficiently handle player
-              information, match records, team management, and other essential aspects of club administration.
-              Leveraging the power of Oracle 10g, the database schema encompasses well-structured tables for players,
-              teams, matches, and associated attributes.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-001.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1><a href="https://github.com/muzahidulsaki/Codeforces-Problemset" target="_blank"
-                title="Codeforces">Problem Solving</a></h1>
-            <h2><a href="https://codeforces.com/profile/saki_vhay" target="_blank"
-                style="text-decoration: underline; color:rgb(255, 11, 11)"> Codeforces-Problemset</a></h2>
-            <p>Codeforces is a competitive programming platform that provides a range of
-              problem-solving challenges for programmers of all levels.
-              The platform hosts regular contests where participants solve algorithmic
-              problems within a specified time frame. These problems cover a wide range of
-              topics, including data structures, dynamic programming, graph theory, and more.
-              Codeforces also provides a rating system that allows users to track their
-              progress and compete with other users worldwide. The platform is popular among
-              competitive programmers, as it provides a challenging environment for improving
-              their problem-solving skills and gaining recognition for their programming
-              abilities.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1111.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1><a href="https://github.com/muzahidulsaki/Beecrows---Solution" target="_blank" title="Beecrowd">Problem
-                Solving</a></h1>
-            <h2><a href="https://www.beecrowd.com.br/judge/en/profile/686469" target="_blank"
-                style="text-decoration: underline; color:rgb(255, 11, 11)"> Beecrows-Solution</a></h2>
-            <p>Beecrowd is a competitive programming platform that provides a range of problem-solving challenges for
-              programmers of all levels. The platform hosts regular contests where participants solve algorithmic
-              problems
-              within a specified time frame. These problems cover a wide range of topics, including data structures,
-              dynamic
-              programming, graph theory, and more. Codeforces also provides a rating system that allows users to track
-              their
-              progress and compete with other users worldwide. The platform is popular among competitive programmers,
-              as it provides a challenging environment for improving their problem-solving skills and gaining
-              recognition for their programming abilities.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1110.png" alt="img">
-          </div>
-        </div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Projects will be populated by JavaScript -->
       </div>
     </div>
   </section>
-  <!-- End Projects Section -->
 
   <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/img-3.png" alt="img">
-
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="./img/img-3.png" alt="Profile Picture">
         </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Software Engineer</h2>
-        <p>Muzahidul Islam Saki is a software engineer and a student at American International University Bangladesh.
-          With a passion for technology and programming, he is always eager to learn
-          and explore new things in the field of software development.
-          Muzahidul has a strong foundation in programming
-          languages such as Java and Python, and he is well-versed in web
-          development technologies such as HTML, CSS, and JavaScript.
-          He enjoys solving complex problems and creating innovative solutions
-          that make a positive impact on people's lives. With a focus on continuous
-          learning and self-improvement, Muzahidul is dedicated to pursuing his goals
-          and making a difference in the world of technology.</p>
-        <a href="https://drive.google.com/file/d/1HZQfnLZ5iJK2qT16ESkbqIC83vUjb_j1/view?usp=sharing" target="_blank"
-          class="cta">View Resume</a>
 
+        <div>
+          <p class="about-text">
+            Muzahidul Islam Saki is a software engineer and a student at
+            American International University Bangladesh. With a passion for
+            technology and programming, he is always eager to learn and
+            explore new things in the field of software development.
+          </p>
+          <p class="about-text">
+            Muzahidul has a strong foundation in programming languages such as
+            Java and Python, and he is well-versed in web development
+            technologies such as NestJS, NodeJS, JavaScript, TypeScript. He enjoys solving
+            complex problems and creating innovative solutions that make a
+            positive impact on people's lives.
+          </p>
+          <p class="about-text">
+            With a focus on continuous learning and self-improvement,
+            Muzahidul is dedicated to pursuing his goals and making a
+            difference in the world of technology.
+          </p>
+          <a href="https://drive.google.com/file/d/1ndeNrh00PVIJrRACzZFOxW-RnmEorcS/view" target="_blank"
+            class="btn btn-primary">
+            <i class="fas fa-download"></i>
+            View Resume
+          </a>
+        </div>
       </div>
     </div>
   </section>
-  <!-- End About Section -->
 
   <!-- Education Section -->
-  <section id="education">
-    <div class="education container">
-
-      <div class="ccc">
-        <h1>Secondary School Certificate (SSC)</h1>
-        <h2>Anjuman Adarsha Government High School</h2> <br>
-        <h4>Netrakona, Mymensingh</h4>
-        <h3>Year: 2014 - 2018</h3>
+  <section class="section education" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <p class="section-subtitle">
+        My academic journey and educational background
+      </p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <h3 class="education-degree">
+              BSc. Computer Science and Engineering
+            </h3>
+            <p class="education-institution">
+              American International University Bangladesh
+            </p>
+            <p class="education-location">Dhaka, Bangladesh</p>
+            <p class="education-year">2022 - Present</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="timeline-content">
+            <h3 class="education-degree">
+              Higher Secondary School Certificate (HSC)
+            </h3>
+            <p class="education-institution">Netrakona Government College</p>
+            <p class="education-location">Netrakona, Mymensingh</p>
+            <p class="education-year">2018 - 2020</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="timeline-content">
+            <h3 class="education-degree">
+              Secondary School Certificate (SSC)
+            </h3>
+            <p class="education-institution">
+              Anjuman Adarsha Government High School
+            </p>
+            <p class="education-location">Netrakona, Mymensingh</p>
+            <p class="education-year">2014 - 2018</p>
+          </div>
+        </div>
       </div>
-      <div class="bbb">
-        <h1>Higher Secondary School Certificate(HSC)</h1>
-        <h2>Netrakona Government College</h2> <br>
-        <h4>Netrakona, Mymensingh</h4>
-        <h3>Year: 2018 - 2020</h3> <br><br><br>
-      </div>
-      <div class="aaa">
-        <h1>BSc. Computer Science and Engineering</h1>
-        <h2>American International University Bangladesh</h2> <br>
-        <h4>Dhaka, Bangladesh</h4>
-        <h3>Year: 2022 - Present</h3> <br><br><br>
-      </div>
-
-      <div class="row">
-        <h1 class="section-title"><span>E</span>ducation</h1>
-      </div>
-
-
-
-
     </div>
   </section>
-  <!-- End Education Section -->
 
   <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">
+        Feel free to reach out for collaborations or just a friendly hello!
+      </p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <!-- <h3 class="contact-title">Phone</h3> -->
           <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>01778776701</h2>
-            <h2>01709907002</h2>
+            <p><a href="tel:+8801778776701">01778776701</a></p>
           </div>
         </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <!-- <h3 class="contact-title">Email</h3> -->
           <div class="contact-info">
-            <h1>Email</h1>
-            <h2>22-47819-2@student.aiub.edu</h2>
-            <h2>muzahidulislamsaki@gmail.com</h2>
+            <p>
+              <a href="mailto:22-47819-2@student.aiub.edu">22-47819-2@student.aiub.edu</a>
+            </p>
+            <p>
+              <a href="mailto:muzahidulislamsaki@gmail.com">muzahidulislamsaki@gmail.com</a>
+            </p>
           </div>
         </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <!-- <h3 class="contact-title">Location</h3> -->
           <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Bashundara R/A, Dhaka Bangladesh</h2>
+            <!-- <p>Bashundhara R/A</p> -->
+            <p>Dhaka, Bangladesh</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Contact Section -->
 
   <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1><span>M</span>uzahidul <span>S</span>aki</h1>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://www.facebook.com/muzahidulislam.saki" target="_blank" class="social-link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/muzahidulislamsaki" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- <a href="https://twitter.com/SakiMuzahidul" target="_blank" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a> -->
+          <a href="https://github.com/muzahidulsaki" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <p class="footer-text">
+          Copyright © 2025 muzahidulsaki. All rights reserved
+        </p>
+        <p class="footer-tagline">Your Complete Web Solution</p>
       </div>
-      <h2>Your Complete Web Solution</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://www.facebook.com/muzahidulislam.saki/" target="_blank" title="Facebook"><img
-              src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.instagram.com/muzahidul_islam_saki/" target="_blank" target="_blank"
-            title="Instagram"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
-        </div>
-
-        <div class="social-item">
-          <a href="https://twitter.com/SakiMuzahidul" target="_blank" title="Twitter"><img
-              src="https://img.icons8.com/bubbles/100/null/twitter-squared.png" /></a>
-        </div>
-
-        <div class="social-item">
-          <a href="https://github.com/muzahidulsaki" target="_blank" title="Github"><img
-              src="https://img.icons8.com/bubbles/50/null/github.png" /></a>
-        </div>
-      </div>
-      <p>Copyright © 2023 muzahidulsaki. All rights reserved</p>
     </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Project Modal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="modalBody">
+        <!-- Modal content will be populated by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Skills data removed — using static HTML for the Skills section per user request.
+    // If you want to re-enable dynamic skills later, restore the `skills` array here.
+
+
+    const projects = [
+      {
+        title: "Bus Reservation System (Live)",
+        subtitle: "Quick, Easy & Secure Online Ticket Booking",
+        description:
+          "Vati Bangla Express is an inter-district bus terminal where buses operate on the Dhaka to Netrakona route",
+        technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        category: "web",
+        github: "",
+        profile: "https://vatibangla.com/",
+        image: "./img/vatibangla.png",
+        icon: "fas fa-home",
+      },
+      {
+        title: "School Management System (Live)",
+        subtitle: "Efficient Management for Educational Institutions",
+        description:
+          "Latifa Abbas Model Mohila Fazil Madrasah is female educational institute, Its located in Netrakona,Bangladesh. A comprehensive platform for managing school operations, including student enrollment, attendance tracking, and grade management.",
+        technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        category: "web",
+        github: "",
+        profile: "https://latifaabbas.edu.bd/",
+        image: "./img/latifaabbas.png",
+        icon: "fas fa-home",
+      },
+      {
+        title: "Bus Reservation System (Backend)",
+        subtitle: "",
+        description:
+          "Developed a bus ticket booking platform with user authentication. Integrated REST APIs built in NestJS with PostgreSQL database for data persistence and secure backend communication.",
+        technologies: ["TypeScript", "Nest.js", "Node.js", "REST API", "PostgreSQL", "Postman"],
+        category: "web",
+        github: "",
+        profile: "https://github.com/muzahidulsaki/Bus-Reservation-System-backend",
+        image: "./img/backend.png",
+        icon: "fas fa-home",
+      },
+      {
+        title: "Rental Management System",
+        subtitle: "Simplify Rentals, Amplify Living",
+        description:
+          "The Rental Management System streamlines rentals for homes, vehicles, equipment, and more. Admins manage users and inventory, owners oversee rentals, and renters browse, request, and track rentals. Built with HTML, CSS, JavaScript, PHP, and MySQL, it ensures efficiency and scalability. Developed with contributions from Muzahidul Islam Saki for a seamless rental experience.",
+        technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        category: "web",
+        github: "https://github.com/muzahidulsaki/RentalManagementsystem",
+        image: "./img/dashboard1.jpg",
+        icon: "fas fa-home",
+      },
+      {
+        title: "Amar Cash",
+        subtitle: "Digital Payment Platform",
+        description:
+          "Amar Cash is a secure digital payment platform ensuring seamless transactions for admins, agents, and users. Admins manage users and profits, agents handle cash-in/out and earnings, while users send money, withdraw, and make payments. Built with C# and Microsoft SQL Server, it offers a robust and scalable financial experience.",
+        technologies: ["C#", "Microsoft SQL Server"],
+        category: "desktop",
+        github: "https://github.com/muzahidulsaki/AmarCash",
+        image: "./img/amar_cash.png",
+        icon: "fas fa-money-bill-wave",
+      },
+      {
+        title: "E-Pharmacy",
+        subtitle: "Online Pharmacy",
+        description:
+          "E-Pharmacy is an online pharmacy project developed in Java GUI. It provides a platform for customers to purchase medicines and other health-related products from the comfort of their own home. The project includes features such as a product catalog, shopping cart, order management, and payment processing. E-Pharmacy aims to simplify the process of buying medicines and healthcare products, making it accessible and hassle-free for everyone.",
+        technologies: ["Java", "GUI"],
+        category: "desktop",
+        github: "https://github.com/muzahidulsaki/E-Pharamcy",
+        image: "./img/img-1100.jpg",
+        icon: "fas fa-pills",
+      },
+      {
+        title: "Project Medicine",
+        subtitle: "Buy Medicines",
+        description:
+          "Project Medicine is a simple console-based project developed in C. The objective of this project is to provide a platform for users to purchase medicines online. The system allows users to browse through a list of available medicines, select the ones they need, and make payment for the same.",
+        technologies: ["C"],
+        category: "console",
+        github: "https://github.com/muzahidulsaki/Project-medicine",
+        image: "./img/img-111.png",
+        icon: "fas fa-capsules",
+      },
+      {
+        title: "Cricket Club Management System",
+        subtitle: "MySQL Project",
+        description:
+          "The Cricket Club Management System developed in Oracle 10g is a comprehensive database project tailored to streamline the operations of a cricket club. This system is designed to efficiently handle player information, match records, team management, and other essential aspects of club administration. Leveraging the power of Oracle 10g, the database schema encompasses well-structured tables for players, teams, matches, and associated attributes.",
+        technologies: ["Oracle 10g", "SQL"],
+        category: "database",
+        github:
+          "https://github.com/muzahidulsaki/Cricket-Club-Management-System",
+        image: "./img/img-001.jpg",
+        icon: "fas fa-baseball-ball",
+      },
+      {
+        title: "Codeforces Problemset",
+        subtitle: "Problem Solving",
+        description:
+          "Codeforces is a competitive programming platform that provides a range of problem-solving challenges for programmers of all levels. The platform hosts regular contests where participants solve algorithmic problems within a specified time frame. These problems cover a wide range of topics, including data structures, dynamic programming, graph theory, and more. Codeforces also provides a rating system that allows users to track their progress and compete with other users worldwide.",
+        technologies: ["C", "C++", "Algorithms"],
+        category: "problem-solving",
+        github: "https://github.com/muzahidulsaki/Codeforces-Problemset",
+        profile: "https://codeforces.com/profile/sakivhay",
+        image: "./img/img-1111.png",
+        icon: "fas fa-trophy",
+      },
+      {
+        title: "Beecrowd Solution",
+        subtitle: "Problem Solving",
+        description:
+          "Beecrowd is a competitive programming platform that provides a range of problem-solving challenges for programmers of all levels. The platform hosts regular contests where participants solve algorithmic problems within a specified time frame. These problems cover a wide range of topics, including data structures, dynamic programming, graph theory, and more.",
+        technologies: ["C", "C++", "Algorithms"],
+        category: "problem-solving",
+        github: "https://github.com/muzahidulsaki/Beecrows---Solution",
+        profile: "https://www.beecrowd.com.br/judge/en/profile/686469",
+        image: "./img/img-1110.png",
+      },
+    ];
+
+    // Typing animation
+    class TypeWriter {
+      constructor(txtElement, words, wait = 3000) {
+        this.txtElement = txtElement;
+        this.words = words;
+        this.txt = "";
+        this.wordIndex = 0;
+        this.wait = parseInt(wait, 10);
+        this.type();
+        this.isDeleting = false;
+      }
+
+      type() {
+        const current = this.wordIndex % this.words.length;
+        const fullTxt = this.words[current];
+
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.txtElement.innerHTML = this.txt;
+
+        let typeSpeed = 100;
+
+        if (this.isDeleting) {
+          typeSpeed /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          typeSpeed = this.wait;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === "") {
+          this.isDeleting = false;
+          this.wordIndex++;
+          typeSpeed = 500;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+      }
+    }
+
+    // Initialize typing animation
+    document.addEventListener("DOMContentLoaded", function () {
+      const txtElement = document.querySelector("#typedText");
+      const words = [
+        "Hello",
+        "My Name is",
+        "Muzahidul Islam Saki",
+        "Software Engineer",
+      ];
+      const wait = 3000;
+      new TypeWriter(txtElement, words, wait);
+    });
+
+    // Theme toggle
+    const themeToggle = document.getElementById("themeToggle");
+    const themeIcon = document.getElementById("themeIcon");
+    const body = document.body;
+
+    function setTheme(theme) {
+      body.setAttribute("data-color-scheme", theme);
+      const isDark = theme === "dark";
+      themeIcon.className = isDark ? "fas fa-sun" : "fas fa-moon";
+      const variables = getVariablesForTheme(theme);
+      Object.entries(variables).forEach(([property, value]) => {
+        document.documentElement.style.setProperty(property, value);
+      });
+    }
+
+    function getVariablesForTheme(theme) {
+      // Return the appropriate CSS variables based on theme
+      return {}; // This would be handled by CSS media queries and data attributes
+    }
+
+    // Check for saved theme preference or default to system preference
+    const savedTheme =
+      localStorage?.getItem("theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light");
+
+    // For sandboxed environment, use a simple variable
+    let currentTheme = "light";
+    setTheme(currentTheme);
+
+    themeToggle.addEventListener("click", () => {
+      currentTheme = currentTheme === "light" ? "dark" : "light";
+      setTheme(currentTheme);
+    });
+
+    // Mobile menu toggle
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      });
+    });
+
+    // Header visibility on scroll
+    const header = document.getElementById("header");
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > 100) {
+        header.classList.add("visible");
+      } else {
+        header.classList.remove("visible");
+      }
+
+      lastScrollTop = scrollTop;
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+
+          // Animate timeline items
+          if (entry.target.classList.contains("timeline-item")) {
+            entry.target.classList.add("visible");
+          }
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections and timeline items
+    document
+      .querySelectorAll(".section, .timeline-item")
+      .forEach((section) => {
+        observer.observe(section);
+      });
+
+    // Active navigation link highlighting
+    function updateActiveNavLink() {
+      const sections = document.querySelectorAll(".section, #hero");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      let current = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop - 200) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", updateActiveNavLink);
+
+    // Populate skills
+    /* Skill population and animation removed — using static HTML for Skills section per user request */
+
+    // Populate projects
+    function populateProjects() {
+      const projectsGrid = document.getElementById("projectsGrid");
+      projectsGrid.innerHTML = projects
+        .map(
+          (project) => `
+        <div class="project-card" data-category="${project.category}" onclick="openProjectModal('${project.title}')">
+          <div class="project-image">
+            <img src="${project.image ? project.image : './img/hero-bg.png'}" alt="${project.title}" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">${project.title}</h3>
+            <p class="project-subtitle">${project.subtitle}</p>
+            <p class="project-description">${project.description.substring(0, 150)}...</p>
+            <div class="project-tech">
+              ${project.technologies.map((tech) => `<span class="tech-tag">${tech}</span>`).join("")}
+            </div>
+          </div>
+        </div>
+      `
+        )
+        .join("");
+    }
+
+    // Project filtering
+    function setupProjectFiltering() {
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const projectCards = document.querySelectorAll(".project-card");
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Remove active class from all buttons
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          // Add active class to clicked button
+          btn.classList.add("active");
+
+          const filter = btn.getAttribute("data-filter");
+
+          projectCards.forEach((card) => {
+            if (
+              filter === "all" ||
+              card.getAttribute("data-category") === filter
+            ) {
+              card.classList.remove("hidden");
+            } else {
+              card.classList.add("hidden");
+            }
+          });
+        });
+      });
+    }
+
+    // Project modal
+    function openProjectModal(projectTitle) {
+      const project = projects.find((p) => p.title === projectTitle);
+      if (!project) return;
+
+      const modal = document.getElementById("projectModal");
+      const modalBody = document.getElementById("modalBody");
+
+      modalBody.innerHTML = `
+    <div class="project-image" style="height: 260px; margin-bottom: 20px;">
+      <img src="${project.image ? project.image : './img/hero-bg.png'}" 
+           alt="${project.title}" 
+           style="width:100%;height:100%;object-fit:cover;border-radius:8px;" 
+           loading="lazy" />
+    </div>
+    <h2 style="margin-bottom: 8px;">${project.title}</h2>
+    <p style="color: var(--color-text-secondary); margin-bottom: 16px;">${project.subtitle}</p>
+    <p style="margin-bottom: 20px; line-height: 1.6;">${project.description}</p>
+
+    <div style="margin-bottom: 20px;">
+      <h4 style="margin-bottom: 12px;">Technologies Used:</h4>
+      <div class="project-tech">
+        ${project.technologies.map((tech) => `<span class="tech-tag">${tech}</span>`).join("")}
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+      ${project.github && project.profile
+          ? `
+            <a href="${project.github}" target="_blank" class="btn btn-primary">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+            <a href="${project.profile}" target="_blank" class="btn btn-secondary">
+              <i class="fas fa-user"></i> View Profile
+            </a>
+          `
+          : project.github
+            ? `
+            <a href="${project.github}" target="_blank" class="btn btn-primary">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          `
+            : project.profile
+              ? `
+            <a href="${project.profile}" target="_blank" class="btn btn-secondary">
+              <i class="fas fa-user"></i> View Profile
+            </a>
+          `
+              : ""
+        }
+    </div>
+  `;
+
+      modal.classList.add("active");
+    }
+
+
+    function closeProjectModal() {
+      const modal = document.getElementById("projectModal");
+      modal.classList.remove("active");
+    }
+
+    // Modal event listeners
+    document
+      .getElementById("modalClose")
+      .addEventListener("click", closeProjectModal);
+    document.getElementById("projectModal").addEventListener("click", (e) => {
+      if (e.target.id === "projectModal") {
+        closeProjectModal();
+      }
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add("visible");
+      } else {
+        backToTop.classList.remove("visible");
+      }
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+
+    // Loading screen
+    window.addEventListener("load", () => {
+      const loadingScreen = document.getElementById("loadingScreen");
+      setTimeout(() => {
+        loadingScreen.style.opacity = "0";
+        setTimeout(() => {
+          loadingScreen.style.display = "none";
+        }, 500);
+      }, 1000);
+    });
+
+    // Initialize everything
+    document.addEventListener("DOMContentLoaded", () => {
+      // Skills are now static HTML; no JS population
+      populateProjects();
+      setupProjectFiltering();
+      updateActiveNavLink();
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      });
+    });
+
+    // Keyboard navigation
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closeProjectModal();
+        // Close mobile menu
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    });
+  </script>
 </body>
 
 </html>
-
-
